@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Speak: code in your own language</title>
+  <meta name="description" content="Speak is an open-source programming language for learning to code in your native tongue. Keywords and error messages come from locale files, so the same program runs in English or Swahili.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/">Speak</a>
+    <nav aria-label="Main">
+      <a href="https://speak-lang.github.io/speak-playground/">Playground</a>
+      <a href="https://github.com/speak-lang/speak">GitHub</a>
+      <a href="#help">Get involved</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Learn to code in the language you think in.</h1>
+  <p class="lead">Speak is an open-source programming language where the keywords, built-in functions and error messages come from translation files. The same program can be written in English or Swahili today, and in more languages as native speakers add them.</p>
+  <p><a class="button" href="https://speak-lang.github.io/speak-playground/">Try it in the playground</a></p>
+
+  <h2>The same program, two languages</h2>
+  <p>A FizzBuzz function, written in English and in Swahili. Both run on the current interpreter.</p>
+  <div class="compare">
+    <section aria-labelledby="en-h">
+      <h3 id="en-h">English</h3>
+<pre><code>// speak fizzbuzz implementation
+fizzbuzz: n number -> string
+    if n % 15 = 0 ? "FizzBuzz"
+    if n % 3 = 0 ? "Fizz"
+    if n % 5 = 0 ? "Buzz"
+    sprint n
+
+// call with 45
+print "fizzbuzz result for {} is {}" 45 (fizzbuzz 45)</code></pre>
+    </section>
+    <section aria-labelledby="sw-h">
+      <h3 id="sw-h">Kiswahili</h3>
+<pre><code>fizzbuzz: n nambari -> mlolongo
+    kama n % 15 = 0 ? "FizzBuzz"
+    kama n % 3 = 0 ? "Fizz"
+    kama n % 5 = 0 ? "Buzz"
+    mlolongo_andika n
+
+// ita na nambari 45
+andika "matokeo ya fizzbuzz kwa {} ni {} yenyewe" 45 (fizzbuzz 45)</code></pre>
+    </section>
+  </div>
+
+  <h2>Why Speak</h2>
+  <ul>
+    <li><strong>Learn in your mother tongue.</strong> Most programming tools assume English. In Speak, the words in your code are words you already know.</li>
+    <li><strong>Built for classrooms.</strong> Designed with teachers and learners, first in Kenya, with lessons that ship alongside the interpreter.</li>
+    <li><strong>Works offline.</strong> No internet needed once it is installed, which matters in schools with little or no connectivity.</li>
+    <li><strong>Runs on modest hardware.</strong> Small enough for a Raspberry Pi.</li>
+    <li><strong>Runs in the browser.</strong> The interpreter also compiles to WebAssembly, so it works in the <a href="https://speak-lang.github.io/speak-playground/">playground</a> with nothing to install.</li>
+  </ul>
+
+  <h2 id="help">Help without writing Rust</h2>
+  <p>You do not need to be a programmer to help.</p>
+  <ul>
+    <li><strong>Translate.</strong> Native speakers of Dholuo, Gĩkũyũ and other languages can add a locale file so learners can code in their language.</li>
+    <li><strong>Teach.</strong> Try Speak with a class or a study group and tell us what worked and what confused people.</li>
+    <li><strong>Test.</strong> Run the samples, try to break them, and report what you find.</li>
+  </ul>
+  <p>Start with the <a href="https://github.com/speak-lang/speak/blob/development/CONTRIBUTING.md">contributing guide</a>. Everyone taking part follows the <a href="https://github.com/speak-lang/speak/blob/development/CODE_OF_CONDUCT.md">code of conduct</a>.</p>
+
+  <h2>Follow the project</h2>
+  <ul>
+    <li><a href="https://github.com/speak-lang/speak">Source code on GitHub</a></li>
+    <li><a href="https://github.com/speak-lang/speak/blob/development/docs/roadmap.md">Roadmap</a></li>
+    <li><a href="https://github.com/speak-lang/speak/blob/development/CONTRIBUTING.md">Contributing</a></li>
+    <li><a href="https://github.com/speak-lang/speak/blob/development/CODE_OF_CONDUCT.md">Code of conduct</a></li>
+  </ul>
+</main>
+
+<footer>
+  <div class="wrap">Speak is open source and built in the open. Syntax may change before version 1.0.</div>
+</footer>
+</body>
+</html>
